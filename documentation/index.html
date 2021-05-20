@@ -1,0 +1,776 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Vuero 1.1 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-page-toc/page-toc.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="docs.css">
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter active" data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Huro 1.0
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >Huro 1.0</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="vuero-vue3---chat-ui">Vuero Vue3 - Chat UI</h1>
+<h2 id="getting-started">Getting started</h2>
+<p>First of all, Thank you so much for purchasing this template and for being our loyal customer. You are awesome! You are entitled to get free lifetime updates to this product and support from the css ninja team directly. <strong>Vuero</strong> is a product built by <a href="https://cssninja.io/" target="_blank">Css Ninja</a> and <a href="https://digisquad.io/" target="_blank">Digisquad</a>.</p>
+<p>This documentation has been written to help you regarding each step of setup and customization. Please go through the documentation carefully to understand how this template is made and how to edit this properly. HTML CSS, and Vue JS framework knowledge is required to customize this template.</p>
+<p>You are currently reading the <strong>Vuero Vue 3 1.0.0</strong> documentation. The product uses:</p>
+<ul>
+<li><a href="https://github.com/vuejs/vue-next" target="_blank"><code>vue3</code></a> Composition API</li>
+<li>Lightning-fast <a href="https://github.com/vitejs/vite" target="_blank"><code>vitejs</code></a> build &amp; development tool</li>
+<li><a href="https://github.com/microsoft/typescript" target="_blank"><code>Typescript</code></a> out of the box, for large-scale JavaScript applications for any browser</li>
+<li>Typekit&apos;s <a href="https://github.com/typekit/webfontloader" target="_blank"><code>webfontloader</code></a> utility to load web fonts from any sources</li>
+<li>Latest <a href="https://bulma.io/" target="_blank"><code>bulma</code></a> integration with <code>sass</code></li>
+<li>Mocked HTTP <a href="public/api">Rest API</a> responses to help you to create your own backend</li>
+<li>Production ready <code>docker</code> images based on <a href="https://bitnami.com/" target="_blank">bitnami</a></li>
+<li><code>yarn</code>, <code>npm</code> and <code>pnpm</code> support</li>
+<li><code>eslint</code>, <code>stylelint</code> and <code>prettier</code> pre-configured</li>
+</ul>
+<h3 id="support">Support</h3>
+<p>If you have any trouble while editing this template or if you simply want to ask a question about something, feel free to contact us at <a href="mailto:support@cssndinja.io" target="_blank">support@cssndinja.io</a> or to post your request on our support at <a href="https://cssninja.io/support/tickets" target="_blank">cssninja.io</a></p>
+<h3 id="prerequisites">Prerequisites</h3>
+<ol>
+<li>A good code editor<br><em><a href="https://code.visualstudio.com/" target="_blank">VSCode</a> settings are preconfigured</em></li>
+<li>A supported web browser (Chrome, Edge, Firefox, ...)</li>
+<li><a href="https://nodejs.org/en/" target="_blank">Nodejs LTS</a> <em>(14.x)</em> installed</li>
+<li><a href="https://github.com/microsoft/typescript" target="_blank">Typescript</a> <em>(4.x)</em> installed</li>
+</ol>
+<h3 id="dependencies-installation">Dependencies installation</h3>
+<p>To setup the template and start installing project dependencies, run one of the following commands:</p>
+<pre><code class="lang-bash"><span class="hljs-comment"># using npm</span>
+npm install
+
+<span class="hljs-comment"># using pnpm</span>
+pnpm install
+
+<span class="hljs-comment"># using yarn</span>
+yarn install
+</code></pre>
+<h3 id="run-a-development-server">Run a development server</h3>
+<p>To start the development server, run one of the following commands:</p>
+<pre><code class="lang-bash"><span class="hljs-comment"># using npm</span>
+npm run dev
+
+<span class="hljs-comment"># using pnpm</span>
+pnpm dev
+
+<span class="hljs-comment"># using yarn</span>
+yarn dev
+</code></pre>
+<blockquote>
+<p>Access the Vuero frontend in your browser at <a href="http://localhost:3000/" target="_blank">http://localhost:3000/</a></p>
+</blockquote>
+<h2 id="vuero-and-vue-3">Vuero and Vue 3</h2>
+<p>Vue 3 introduces the Composition API wich is a set of additive, function-based APIs that allow flexible composition of component logic.</p>
+<p>You may want to take a look of what changed since Vue 2 here:<br><a href="https://v3.vuejs.org/guide/migration/introduction.html#overview" target="_blank">https://v3.vuejs.org/guide/migration/introduction.html#overview</a></p>
+<p>You still can still write components using old Option API (<code>data</code> / <code>computed</code> / <code>method</code> components fields).<br>Therefore, all Vue2 plugins/components should be compatible with Vue3.</p>
+<p>Here is a great cheat sheet provided by the vue core team to help you get started with the Composition API:<br><a href="https://www.vuemastery.com/pdf/Vue-3-Cheat-Sheet.pdf" target="_blank">https://www.vuemastery.com/pdf/Vue-3-Cheat-Sheet.pdf</a></p>
+<h3 id="global-structure">Global structure</h3>
+<pre><code>Vuero
+|-- .vscode/
+|-- nginx/
+|-- public/
+|     |-- api/
+|     |-- img/
+|
+|-- src/
+|     |-- assets/
+|     |-- components/
+|     |-- composable/
+|     |-- data/
+|     |-- directives/
+|     |-- layouts/
+|     |-- locales/
+|     |-- models/
+|     |-- pages/
+|     |-- utils/
+|     |-- App.vue
+|     |-- i18n.ts
+|     |-- main.ts
+|     |-- router.ts
+|     |-- shims-vue.d.ts
+|     |-- window.d.ts
+|
+|-- .dockerignore
+|-- .editorconfig
+|-- .eslintrc.js
+|-- .gitignore
+|-- .prettierignore
+|-- .prettierrc.js
+|-- Dockerfile
+|-- index.html
+|-- package-lock.json
+|-- package.json
+|-- stylelint.config.js
+|-- tsconfig.json
+|-- vite.config.ts
+|-- yarn.lock
+</code></pre><p>The directory structure can seem unusual for someone who is not familiar with build tools and javascript bundlers. We will break each part of it, so you understand how everything works.</p>
+<h3 id="router-layouts-and-pages-structure">Router, layouts and pages structure</h3>
+<pre><code>Vuero
+|-- src/
+|     |-- layouts/
+|          |-- AuthLayout.vue
+|          |-- DefaultLayout.vue
+|          |-- MinimalLayout.vue
+|          |-- etc...
+|
+|     |-- pages/
+|          |-- admin/
+|          |-- auth/
+|          |-- components/
+|          |-- elements/
+|          |-- error/
+|          |-- webapp/
+|          |-- admin.vue
+|          |-- auth.vue
+|          |-- index.vue
+|          |-- etc...
+|
+|     |-- router.ts
+|
+</code></pre><p>Vuero uses <code>vue-router</code> for Vue 3, you can find more information by visiting the corresponding documentation: <a href="https://next.router.vuejs.org/" target="_blank">https://next.router.vuejs.org/</a></p>
+<p>Vue router allows to dynamically render a component as a page based on a provided url.<br>In order to do so, we have to bind each route to a component.</p>
+<p>Thanks to <code>vite-plugin-pages</code> vite plugin, routes are generated from <code>src/pages/*.vue</code> files</p>
+<p>We still can manually define routes in the <a href="src/router.ts">./src/router.ts</a> file.<br>Here is an example of registering a new page with a new layout</p>
+<pre><code class="lang-typescript"><span class="hljs-comment">// file ./src/router.ts</span>
+
+<span class="hljs-comment">// First you need to comment generated page loading</span>
+<span class="hljs-comment">// import routes from &apos;pages-generated&apos;</span>
+
+<span class="hljs-keyword">import</span> { RouteRecordRaw } from <span class="hljs-string">&apos;vue-router&apos;</span>
+
+<span class="hljs-comment">// Then we can define our routes </span>
+<span class="hljs-keyword">const</span> routes: RouteRecordRaw[] = [
+  <span class="hljs-comment">// This is a simple route</span>
+  {
+    component: () =&gt; <span class="hljs-keyword">import</span>(<span class="hljs-string">&apos;/src/pages/index.vue&apos;</span>),
+    name: <span class="hljs-string">&apos;index&apos;</span>,
+    path: <span class="hljs-string">&apos;/&apos;</span>,
+    props: <span class="hljs-literal">true</span>
+  },
+  <span class="hljs-comment">// This is a nested route, they will all share src/pages/auth.vue layout</span>
+  <span class="hljs-comment">// which need to have a &lt;router-view&gt;&lt;/router-view&gt; component </span>
+  <span class="hljs-comment">// to render they childrens content</span>
+  {
+    component: () =&gt; <span class="hljs-keyword">import</span>(<span class="hljs-string">&apos;/src/pages/auth.vue&apos;</span>),
+    path: <span class="hljs-string">&apos;/auth&apos;</span>,
+    props: <span class="hljs-literal">true</span>,
+    children: [
+      {
+        component: () =&gt; <span class="hljs-keyword">import</span>(<span class="hljs-string">&apos;/src/pages/auth/login-1.vue&apos;</span>),
+        name: <span class="hljs-string">&apos;auth-login-1&apos;</span>,
+        path: <span class="hljs-string">&apos;login-1&apos;</span>,
+        props: <span class="hljs-literal">true</span>,
+      },
+    ],
+  },
+  <span class="hljs-comment">// This is a &quot;catch-all&quot; 404 route</span>
+  {
+    component: () =&gt; <span class="hljs-keyword">import</span>(<span class="hljs-string">&apos;/src/pages/[...all].vue&apos;</span>),
+    name: <span class="hljs-string">&apos;404&apos;</span>,
+    path: <span class="hljs-string">&apos;/:all(.*)&apos;</span>,
+    props: <span class="hljs-literal">true</span>
+  },
+]
+
+<span class="hljs-keyword">const</span> router = createRouter({
+  history: createWebHistory(),
+  routes,
+})
+</code></pre>
+<p>Simple page example with custom layout</p>
+<pre><code class="lang-vue">// file ./src/pages/index.vue
+&lt;script setup lang=&quot;ts&quot;&gt;
+import { useHead } from &apos;@vueuse/head&apos;
+import { activeSidebar, toggleSidebar } from &apos;/@src/state/activeSidebarState&apos;
+
+useHead({
+  title: &apos;Blank Template 1 - Sidebar - Vuero&apos;,
+})
+&lt;/script&gt;
+
+&lt;template&gt;
+  &lt;SidebarColorLayout&gt;
+    &lt;LayoutsSidebar /&gt;
+    &lt;LayoutsMobileSubsidebar /&gt;
+
+    &lt;div
+      class=&quot;view-wrapper&quot;
+      :class=&quot;[activeSidebar !== &apos;none&apos; &amp;&amp; &apos;is-pushed-full&apos;]&quot;
+    &gt;
+      &lt;div class=&quot;page-content-wrapper&quot;&gt;
+        &lt;div class=&quot;page-content is-relative&quot;&gt;
+          &lt;div class=&quot;page-title has-text-centered&quot;&gt;
+            &lt;!-- Sidebar Trigger --&gt;
+            &lt;div
+              class=&quot;huro-hamburger nav-trigger push-resize&quot;
+              @click=&quot;toggleSidebar(&apos;layouts&apos;)&quot;
+            &gt;
+              &lt;span class=&quot;menu-toggle has-chevron&quot;&gt;
+                &lt;span
+                  :class=&quot;[activeSidebar !== &apos;none&apos; &amp;&amp; &apos;active&apos;]&quot;
+                  class=&quot;icon-box-toggle&quot;
+                &gt;
+                  &lt;span class=&quot;rotate&quot;&gt;
+                    &lt;i class=&quot;icon-line-top&quot;&gt;&lt;/i&gt;
+                    &lt;i class=&quot;icon-line-center&quot;&gt;&lt;/i&gt;
+                    &lt;i class=&quot;icon-line-bottom&quot;&gt;&lt;/i&gt;
+                  &lt;/span&gt;
+                &lt;/span&gt;
+              &lt;/span&gt;
+            &lt;/div&gt;
+
+            &lt;div class=&quot;title-wrap&quot;&gt;
+              &lt;h1 class=&quot;title is-4&quot;&gt;Blank Template&lt;/h1&gt;
+            &lt;/div&gt;
+
+            &lt;Toolbar /&gt;
+          &lt;/div&gt;
+
+          &lt;div class=&quot;page-content-inner&quot;&gt;
+            &lt;!--Page content goes here--&gt;
+            &lt;!--
+              If your page is a nested route (contains childrens), 
+              you will need to add a &lt;router-view&gt;&lt;/router-view&gt; here.
+            --&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/SidebarColorLayout&gt;
+&lt;/template&gt;
+</code></pre>
+<p>To create a new layout, your component&apos;s template needs to have a <code>&lt;RouterView /&gt;</code>, which gets replaced by your page component.<br><em>Note: You can create your layout files anywhere but we recommend that you do it inside the <code>layouts/</code> folder as it helps keeping the project structured</em></p>
+<h3 id="components-structure">Components structure</h3>
+<pre><code>Vuero
+|-- src/
+|     |-- components/
+|          |-- base/
+|          |-- navigation/
+|          |-- pages/
+|          |-- partials/
+|
+</code></pre><p>The <code>components</code> folder holds all reusable elements. They consist in chunks of code that you can reuse accross your application: it can be a button, a navbar, a content section or whatever you want. You can create as many subfolders as you want to organize your components.  <code>/base</code> components are all basic reusable blocks like <code>&lt;v-button&gt;</code> and  <code>&lt;v-tag&gt;</code> for example. <code>/navigation</code> components are main layout sidebars, navbars and panels.  <code>/pages</code> represent the inner content of each Vuero page. It is abstracted this way so it can be reused in any kind of layout. <code>/partials</code> components are small and miscellaneous components / chunks of pages that are reused accross the entire template.</p>
+<p><strong>Here is an example of a component:</strong></p>
+<pre><code class="lang-vue">&lt;script lang=&quot;ts&quot;&gt;
+// file: ./src/components/MyComponent.vue
+import { defineComponent, ref } from &apos;vue&apos;
+
+const MyComponent = defineComponent({
+  name: &apos;MyComponent&apos;,
+  setup() {
+    // MyComponent Composition API
+    const myVar = ref(42)
+
+    return {
+      myVar
+    }
+  },
+})
+
+export default MyComponent
+&lt;/script&gt;
+
+&lt;template&gt;
+  &lt;!-- MyComponent Template --&gt;
+  &lt;div&gt;&lt;/div&gt;
+
+  &lt;!-- 
+    OtherComponent is lazyloaded automaticaly 
+    due to vite-plugin-components
+
+    @see https://github.com/antfu/vite-plugin-components
+  --&gt;
+  &lt;OtherComponent /&gt;
+&lt;/template&gt;
+</code></pre>
+<blockquote>
+<p>Tip for VSCode users:<br>start typing <code>&lt;script</code> in an empty <code>.vue</code> file to trigger a snippet suggestion.</p>
+</blockquote>
+<p>All components in vuero use the <code>&lt;script setup</code> suggar syntax wich allow us to only write the <code>setup()</code> function without need to return what we want to expose to our template.</p>
+<pre><code class="lang-vue">&lt;script setup lang=&quot;ts&quot;&gt;
+// file: ./src/components/MyComponent.vue
+import { ref } from &apos;vue&apos;
+
+const myVar = ref(42)
+&lt;/script&gt;
+
+&lt;template&gt;
+  &lt;!-- MyComponent Template --&gt;
+  &lt;div&gt;&lt;/div&gt;
+
+  &lt;!-- 
+    OtherComponent is lazyloaded automaticaly 
+    due to vite-plugin-components
+
+    @see https://github.com/antfu/vite-plugin-components
+  --&gt;
+  &lt;OtherComponent /&gt;
+&lt;/template&gt;
+</code></pre>
+<p><strong>Naming a component:</strong></p>
+<p>When referring to components inside the template, consider using <code>CamelCase</code> insted of <code>pascal-case</code> notation.</p>
+<blockquote>
+<p>Tip: You can find all recommandations and best practices in the Vue3 style guide<br><a href="https://v3.vuejs.org/style-guide" target="_blank">https://v3.vuejs.org/style-guide</a></p>
+</blockquote>
+<h3 id="the-composition-api">The Composition API</h3>
+<pre><code>Vuero
+|-- src/
+|     |-- composable/
+|          |-- useCreditcardMask.ts
+|          |-- useDropdown.ts
+|          |-- useMarkdownToc.ts
+|          |-- useNotyf.ts
+|     |-- state/
+|          |-- activePanelState.ts
+|          |-- activeSidebarState.ts
+|          |-- darkModeState.ts
+|          |-- mobileSidebarState.ts
+|          |-- navbarLayoutState.ts
+|          |-- navbarState.ts
+|          |-- responsiveState.ts
+|          |-- sidebarLayoutState.ts
+|          |-- themeColors.ts
+|          |-- wizardState.ts
+|
+</code></pre><p>Since we now have the powerful Composition API, we do not need to use <code>vuex</code> anymore to share state between components.<br><em><a href="https://github.com/vuejs/vuex/tree/4.0/examples/composition/chat" target="_blank">Here is an example using vuex composition api</a></em><br>Instead we register variables in separate files using the <code>ref</code> or <code>reactive</code> methods from the new <code>vue</code> package.
+Those variables will be reactive across all your project.
+You can see examples of it in <code>./src/state</code></p>
+<p>Also, to reduce component size and allow easy code reusability, code logic is split into <strong>Composable</strong> functions.
+Those functions create a scoped state (usefull for a reusable dropdown, for instance).
+You can see examples of it in <code>./src/composable</code></p>
+<blockquote>
+<p>Tip: keep the cheat sheet open!<br><a href="https://www.vuemastery.com/pdf/Vue-3-Cheat-Sheet.pdf" target="_blank">https://www.vuemastery.com/pdf/Vue-3-Cheat-Sheet.pdf</a></p>
+<p>Advanced: Why the Composition API was introduced in Vue
+<a href="https://v3.vuejs.org/guide/composition-api-introduction.html" target="_blank">https://v3.vuejs.org/guide/composition-api-introduction.html</a></p>
+</blockquote>
+<h3 id="data-api-fixtures">Data API fixtures</h3>
+<pre><code>Vuero
+|-- public/
+|     |-- api/
+|          |-- companies.json
+|          |-- conversation1.json
+|          |-- conversation2.json
+|          |-- conversation3.json
+|          |-- conversation4.json
+|          |-- conversation5.json
+|          |-- search.json
+|          |-- users.json
+|-- src/
+|     |-- data/
+|          |-- apps/
+|               |-- kanban.ts
+|               |-- saas-billing.ts
+|          |-- dashboard/
+|          |-- documentation/
+|          |-- landing/
+|          |-- layouts/
+|          |-- users/
+|          |-- widgets/
+|          |-- wizard/
+</code></pre><p>You probably already noticed that there are <code>json</code> files located in the <code>public/api</code> folder.<br>Those files are requested by some components to simulate calls to a real world API.</p>
+<p>The structure is arbitrary and probably won&apos;t reflect what you will need to implement for your backend. This fake API is simply here to give you examples of on how to request remote data using the Composition API (we are using the <code>axios</code> package, which is one of the most common for HTTP REST requests).</p>
+<p>The data files located in <code>src/data</code> folder are directly impored in components as static data.  </p>
+<h3 id="vite-rollup-and-typescript">Vite, Rollup and Typescript</h3>
+<pre><code>Vuero
+|-- tsconfig.json
+|-- vite.config.ts
+</code></pre><p>Vuero uses <a href="https://github.com/vitejs/vite" target="_blank"><code>Vite</code></a>, which is a web development build tool that supports:</p>
+<ul>
+<li>a fast development environment with hot reload <em>(using <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules" target="_blank"><code>native javascript modules</code></a>)</em></li>
+<li>building an optimized version for production <em>(using <a href="https://github.com/rollup/rollup" target="_blank"><code>rollup</code></a> and <a href="https://webpack.js.org/guides/tree-shaking/" target="_blank"><code>tree-shaking</code></a>)</em></li>
+<li>native support of typescript</li>
+</ul>
+<p>Under the hood, when runing <code>npm run dev</code>, it runs <code>vite</code>.</p>
+<p>To learn more about this awesome tool made by the vuejs core team, check the <a href="https://github.com/vitejs/vite" target="_blank">Vite documentation</a>. You will learn how to:</p>
+<ul>
+<li>Add postcss pre-processors</li>
+<li>Integrate JSX</li>
+<li>Implement fancy Web Assembly code</li>
+<li>Add new asset path aliases</li>
+<li>And much more</li>
+</ul>
+<p>Typescript is just an extention of Javascript, If you are new to it, don&apos;t be afraid because all valid JavaScript code is also TypeScript code. <em>(<a href="https://www.typescriptlang.org/" target="_blank">TypeScript documentation</a>)</em><br>The main advatages of using Typescript are:</p>
+<ul>
+<li>Validates your code ahead of time</li>
+<li>Provides auto-completion</li>
+<li>Supports complex Type checking</li>
+</ul>
+<h3 id="keep-it-clean-with-linters">Keep it clean with linters</h3>
+<pre><code>Vuero
+|-- .vscode/
+|     |-- extensions.json
+|     |-- settings.json
+|
+|-- .editorconfig
+|-- .eslintrc.js
+|-- .prettierignore
+|-- .prettierrc.js
+|-- stylelint.config.js
+</code></pre><p>Because we love clean code, we have configured 3 linters which have their own purpose:</p>
+<ul>
+<li><code>eslint</code>: prevent code quality concerns (no unused vars, ...)</li>
+<li><code>stylelint</code>: prevent css quality concerns (no invalid colors, ...)</li>
+<li><code>prettier</code>: handles formatting rules (max line lenght, ...)</li>
+</ul>
+<p>You can check the quality of your code by running</p>
+<pre><code class="lang-bash"><span class="hljs-comment"># using npm</span>
+npm run lint
+
+<span class="hljs-comment"># using yarn</span>
+yarn lint
+</code></pre>
+<p>Linters can fix a lot of issues all by themselves. To do so, try runing</p>
+<pre><code class="lang-bash"><span class="hljs-comment"># using npm</span>
+npm run lint:fix
+
+<span class="hljs-comment"># using yarn</span>
+yarn lint:fix
+</code></pre>
+<blockquote>
+<p>Tip for VSCode users:<br>Install recommended extensions, linting will then occur each time files are saved!</p>
+</blockquote>
+<h2 id="customizing-vuero">Customizing Vuero</h2>
+<h3 id="philosophy">Philosophy</h3>
+<p>Vuero si built to be an extremely modular and flexible product. Layouts have been destructured so you can switch the entire layout live, without reloading the page. Therefore, page inner content is considered as a component that gets injected in the currently active layout.</p>
+<h3 id="scss-structure">Scss structure</h3>
+<pre><code>Vuero
+|-- src/
+|     |-- assets/
+|          |-- scss
+|               |-- abstracts
+|               |-- components
+|               |-- elements
+|               |-- extensions
+|               |-- layout
+|               |-- pages
+|               |-- vendors
+|               |-- main.scss
+|     |-- main.ts
+|-- index.html
+</code></pre><p>Vuero relies on the powerful Sass features and a modular structure, letting you handle complex styles in a breeze. You need to import all the SCSS partials into your core file. This is how scss files are organized. Partial SCSS file names always start with an underscore like this: <code>_button.scss</code> . They act as chunks of code that you can import only if you need them. Of course some of them are mandatory for the project to work. Vuero is a UI kit in wich each SCSS file serves a different purpose:</p>
+<ul>
+<li><strong>abstracts</strong>: holds all files related to SCSS variables, mixins, default global styles and other typography settings.</li>
+<li><strong>components</strong>: holds all files related to Vuero Components. Each component type has its own file.</li>
+<li><strong>Elements</strong>: holds all files related to Vuero Elements. Each element type has its own file.</li>
+<li><strong>layout</strong>: holds all basic and mandatory layout files. The project will break if you ommit one of those files.</li>
+<li><strong>pages</strong>: holds all the specific styles for each demo or group of demos.</li>
+<li><strong>vendors</strong>: holds all vendor CSS styles.</li>
+</ul>
+<h3 id="import-scss-in-vue3">Import Scss in Vue3</h3>
+<p>In order to load stylesheets into our application, we simply need to import <code>css</code>, <code>sass</code> or <code>scss</code> files in the <code>main.ts</code> file</p>
+<pre><code class="lang-typescript"><span class="hljs-comment">// file: ./src/main.ts</span>
+
+<span class="hljs-comment">// ...</span>
+<span class="hljs-keyword">import</span> <span class="hljs-string">&apos;notyf/notyf.min.css&apos;</span>
+
+<span class="hljs-keyword">import</span> <span class="hljs-string">&apos;./assets/scss/main.scss&apos;</span>
+<span class="hljs-comment">// ...</span>
+</code></pre>
+<blockquote>
+<p>all imported files here are to be converted in <code>css</code>, and injected automatically in <code>index.html</code> at build and run time.</p>
+</blockquote>
+<h3 id="bulma-integration">Bulma Integration</h3>
+<p>Bulma is fully integrated with Vuero. This means that when you change the <code>$primary</code> Vuero color variable and any Bulma related variable to take precedence over it. The variable changes you make will be applied to all native Bulma elements.</p>
+<h3 id="native-dark-mode">Native Dark Mode</h3>
+<p>Vuero comes with a native Dark mode. This means that all components are prestyled for dark mode. You don&apos;t have to worry about it, when you turn it on, the colors change seamlessly. Dark mode styling is made through a global <code>.is-dark</code> class added to the page <code>&lt;body&gt;</code> element. Dark mode is toggled on the body with javascript. In another type of implementation, the body would have to be rendered by the server with the proper class before being served to the client, based on the user selection.</p>
+<h3 id="lazyloading-scss">Lazyloading Scss</h3>
+<pre><code>Vuero
+|-- src/
+|     |-- components/
+|                 |-- pages/
+|
+</code></pre><p>The pages folder holds the template pages as chanks of reusable UI that can be inserted in all available layout types. Each page is a Vue 3 component with a  <code>&lt;style&gt;</code> element that holds required SCSS for that page. This way, you don&apos;t load unecessary CSS when browsing.</p>
+<p>They are not added by default to <code>main.scss</code>, instead we lazyload them in layouts or directly in pages:</p>
+<pre><code class="lang-html"><span class="hljs-comment">&lt;!-- file ./src/pages/status.vue --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">lang</span>=<span class="hljs-string">&quot;ts&quot;</span>&gt;</span><span class="actionscript">
+  <span class="hljs-comment">// ...</span>
+</span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">template</span>&gt;</span>
+  <span class="hljs-comment">&lt;!-- ... --&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">template</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">style</span> <span class="hljs-attr">lang</span>=<span class="hljs-string">&quot;scss&quot;</span>&gt;</span><span class="css">
+  <span class="hljs-comment">/* files imported in components will be loaded only once they are needed */</span>
+  @<span class="hljs-keyword">import</span> <span class="hljs-string">&apos;../assets/scss/abstracts/_variables.scss&apos;</span>;
+  @<span class="hljs-keyword">import</span> <span class="hljs-string">&apos;../assets/scss/abstracts/_mixins.scss&apos;</span>;
+  @<span class="hljs-keyword">import</span> <span class="hljs-string">&apos;../assets/scss/pages/generic/_utility.scss&apos;</span>;
+
+  <span class="hljs-selector-class">.status-page-wrapper</span> {
+    <span class="hljs-comment">/* custom scss for this page */</span>
+  }
+</span><span class="hljs-tag">&lt;/<span class="hljs-name">style</span>&gt;</span>
+</code></pre>
+<h2 id="going-further">Going further</h2>
+<h3 id="build-for-production">Build for production</h3>
+<pre><code class="lang-bash"><span class="hljs-comment"># using npm</span>
+npm run build
+
+<span class="hljs-comment"># using yarn</span>
+yarn build
+</code></pre>
+<blockquote>
+<p>Built files are located in <a href="dist">./dist</a> folder<br>You can deploy your website on any http server like Apache, Nginx or <a href="https://www.npmjs.com/package/http-server" target="_blank"><code>http-server</code></a> package from npm<br>You can also use a CDN like Github pages, Netlify, AWS Cloudfront, ...<br><strong>Vuero can not be opened from the local file system (using <code>file://</code> protocol)</strong></p>
+</blockquote>
+<p>You can preview quickly your production version with <a href="https://www.npmjs.com/package/http-server" target="_blank"><code>http-server</code></a></p>
+<pre><code class="lang-bash">npx http-server ./dist
+</code></pre>
+<blockquote>
+<p>Now you can visit <a href="http://localhost:8080" target="_blank">http://localhost:8080</a> to view your server</p>
+</blockquote>
+<h3 id="using-docker">Using docker</h3>
+<p>This project includes a <a href="Dockerfile">Dockerfile</a> which first builds Vuero for production, and then creates a tiny image with only built files, served by Nginx</p>
+<p>To build your image, run the following command:</p>
+<pre><code class="lang-bash">docker build --tag Vuero:1.0 .
+</code></pre>
+<p>To preview your image, run the following command:</p>
+<pre><code class="lang-bash">docker run --publish 8080:8080 --rm Vuero:1.0
+</code></pre>
+<blockquote>
+<p>Access the Vuero frontend at <a href="http://localhost:8080" target="_blank">http://localhost:8080</a></p>
+</blockquote>
+<p>To run your image, run the following command:</p>
+<pre><code class="lang-bash">docker run --publish 80:8080 --detach --restart always --name my-Vuero-app Vuero:1.0
+</code></pre>
+<blockquote>
+<p><em>note: you might need root/sudo access to bind port 80 to the container</em></p>
+</blockquote>
+<h3 id="build-your-own-backend">Build your own backend</h3>
+<p>To bring your chat alive you will need to create a backend for user authentification, message and room persistance, etc ...<br>We have implemented samples with a fake REST HTTP API to keep the project as simple and understainable as possible.</p>
+<p>You can take a look at projects such <a href="https://strapi.io/" target="_blank">strapi</a> or <a href="https://kuzzle.io/" target="_blank">kuzzle</a>, wich are open-source backend, that can be nicely used with Vuero <em>(<a href="https://firebase.google.com/" target="_blank">firebase</a> can be a good choice too)</em> !</p>
+<h2 id="customer-support">Customer support</h2>
+<p>Please remember you have purchased a very affordable theme and you did not pay for a full-time web design agency. We will help with your issues, but these requests will be put on a relevant priority, regarding their nature. Support is provided for your comfort and for a best possible experience, so please be patient, polite and respectful, as we are towards you.</p>
+<h3 id="support-includes">Support includes</h3>
+<ul>
+<li>Responding to questions or problems regarding the item and its features</li>
+<li>Fixing bugs and reported issues</li>
+<li>Providing updates</li>
+</ul>
+<h3 id="support-does-not-include">Support does not include</h3>
+<ul>
+<li>Customization and installation services</li>
+<li>Support for third party software and plug-ins</li>
+</ul>
+<h3 id="before-support">Before Support</h3>
+<ul>
+<li>Make sure your question is a valid Theme Issue and not a customization request</li>
+<li>Make sure you have read through the documentation and any ressources before asking support on how to accomplish a task</li>
+<li>Make sure to double check the theme FAQs.</li>
+<li>If you have customized your theme and now have an issue, back-track to make sure you didn&apos;t make a mistake. If you have made changes and can&apos;t find the issue, please provide us with your changelog.</li>
+<li>Almost 80% of the time we find that the solution to people&apos;s issues can be solved with a simple &quot;Google Search&quot;. You might want to try that before seeking support. You might be able to fix the issue yourself much quicker than we can respond to your request.</li>
+<li>Make sure to state the name of the theme you are having issues with when requesting support.</li>
+</ul>
+<h2 id="changelog">Changelog</h2>
+<p>You can find the version history <a href="CHANGELOG.md">CHANGELOG.md</a> file inside the Vuero-theme.zip folder or you can check the changelog on the theme&apos;s sale page.</p>
+<p>Once again, thank you so much for purchasing this theme. As I said at the beginning, we&apos;d be glad to help you if you have any questions related to this theme. No guarantees, but we&apos;ll do our best to assist and support you. If you have a more general question relating to Vuero Vue3, you might consider opening a ticket and ask your question in the <a href="https://cssninja.io/support/tickets" target="_blank">Css Ninja support portal</a>.</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Huro 1.0","level":"1.1","depth":1,"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["page-toc"],"pluginsConfig":{"page-toc":{"position":"top","selector":".markdown-section h1, .markdown-section h2, .markdown-section h3","showByDefault":true},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"./docs.css"}},"file":{"path":"README.md","mtime":"2021-04-04T11:24:39.824Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-04-22T21:17:48.685Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-page-toc/anchor-3.1.1.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-page-toc/page-toc.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

@@ -1,0 +1,18 @@
+body > div > div.book-body > div > div.book-header > a.btn.pull-left.js-toolbar-action {
+	display: none !important;
+}
+
+.page-toc {
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 300px;
+	z-index: 99;
+	overflow-y: auto;
+}
+
+
+.page-toc ul {
+	overflow-y: auto;
+}
