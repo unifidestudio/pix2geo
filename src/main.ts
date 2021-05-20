@@ -20,9 +20,6 @@ import VueApexCharts from 'vue3-apexcharts'
 import VueCKEditor from '@ckeditor/ckeditor5-vue'
 import VueTippy from 'vue-tippy'
 
-import FirebasePlugin from 'vca-firebase'
-import firebaseConfig from './firebase.config'
-
 import App from './App.vue'
 import i18n from './i18n'
 import router from './router'
@@ -56,7 +53,6 @@ import './scss/main.scss'
 
 // Now we can start our vue app
 const app = createApp(App)
-app.use(FirebasePlugin, firebaseConfig)
 const head = createHead()
 
 app.use(router)
