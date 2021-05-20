@@ -122,3 +122,4 @@ cypress/videos
 # ignoring vuero releases files
 /*.pdf
 /*.zip
+.idea/
