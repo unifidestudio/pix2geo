@@ -160,8 +160,8 @@ export default defineConfig({
       registerType: 'autoUpdate',
       base: '/',
       manifest: {
-        name: 'Vuero - A complete Vue 3 design system',
-        short_name: 'Vuero',
+        name: 'Pix2Geo',
+        short_name: 'Pix2Geo',
         start_url: '/?utm_source=pwa',
         display: 'standalone',
         theme_color: '#ffffff',
