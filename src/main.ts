@@ -51,6 +51,8 @@ import './scss/vendors/prism-coldark-cold.css'
 
 import './scss/main.scss'
 
+import firebase from 'firebase/app'
+
 // Now we can start our vue app
 const app = createApp(App)
 const head = createHead()
@@ -73,5 +75,18 @@ app.component(VueSlider.name, VueSlider)
 app.directive('has-nested-router-link', hasNestedRouterLink)
 app.directive('background', background)
 app.directive('tooltip', tooltip)
+
+const firebaseConfig = {
+  apiKey: 'AIzaSyA48f-h4gt8u3PXN25YEoGZBsp_CZgr6Eo',
+  authDomain: 'pix2geo.firebaseapp.com',
+  databaseURL: 'https://pix2geo-default-rtdb.firebaseio.com',
+  projectId: 'pix2geo',
+  storageBucket: 'pix2geo.appspot.com',
+  messagingSenderId: '357165268881',
+  appId: '1:357165268881:web:fc56b10b8205f7f29b6430',
+  measurementId: 'G-L9RHQ2FCN5',
+}
+
+firebase.initializeApp(firebaseConfig)
 
 app.mount('#app')
