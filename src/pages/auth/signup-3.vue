@@ -7,17 +7,48 @@ import useNotyf from '/@src/composable/useNotyf'
 import { isDark } from '/@src/state/darkModeState'
 import sleep from '/@src/utils/sleep'
 
+import firebase from 'firebase'
+
 const router = useRouter()
 const notif = useNotyf()
 const isLoading = ref(false)
 
+let name = ref('')
+let email = ref('')
+let password = ref('')
+let password2 = ref('')
+
 const handleSignup = async () => {
   if (!isLoading.value) {
     isLoading.value = true
-    sleep(2000)
+
+    firebase
+      .auth()
+      .createUserWithEmailAndPassword(email.value, password.value)
+      .then((res) => {
+        console.log(res.user)
+        res.user
+          .updateProfile({
+            displayName: name.value,
+          })
+          .then(() => {
+            this.$router.push('/auth/login-3')
+          })
+      })
+      .catch((error) => {
+        alert(error.message)
+      })
+
     notif.success('Welcome, Erik Kovalsky')
     router.push({ name: 'sidebar-dashboards' })
     isLoading.value = false
+  }
+
+  return {
+    name,
+    email,
+    password,
+    password2,
   }
 }
 
@@ -72,6 +103,7 @@ useHead({
               <V-Field>
                 <V-Control icon="feather:user">
                   <input
+                    v-model="name"
                     class="input"
                     type="text"
                     placeholder="Name"
@@ -83,6 +115,7 @@ useHead({
               <V-Field>
                 <V-Control icon="feather:mail">
                   <input
+                    v-model="email"
                     class="input"
                     type="text"
                     placeholder="Email Address"
@@ -94,6 +127,7 @@ useHead({
               <V-Field>
                 <V-Control icon="feather:lock">
                   <input
+                    v-model="password"
                     class="input"
                     type="password"
                     placeholder="Password"
@@ -105,6 +139,7 @@ useHead({
               <V-Field>
                 <V-Control icon="feather:lock">
                   <input
+                    v-model="password2"
                     class="input"
                     type="password"
                     placeholder="Repeat Password"
