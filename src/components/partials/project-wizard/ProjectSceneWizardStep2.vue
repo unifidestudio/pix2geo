@@ -26,7 +26,8 @@ const onRemoveFile = (error: any, fileInfo: any) => {
 <template>
   <div class="step-content">
     <div class="step-title">
-      <h2 class="dark-inverted">Add a new Project</h2>
+      <h2 class="dark-inverted">What is this project about?</h2>
+      <p>Manage better by adding all relevant project information</p>
     </div>
 
     <div class="project-info">
@@ -68,7 +69,51 @@ const onRemoveFile = (error: any, fileInfo: any) => {
               </V-Control>
             </V-Field>
           </div>
-          <div class="project-description p-t-10"></div>
+          <div class="project-description p-t-10">
+            <V-Field>
+              <V-Control>
+                <textarea
+                  v-model="wizardData.description"
+                  class="textarea"
+                  rows="4"
+                  placeholder="Describe your project..."
+                ></textarea>
+                <p v-if="wizardData.description.length === 0" class="help">
+                  Minimum of 50 characters
+                </p>
+                <p
+                  v-else-if="wizardData.description.length === 49"
+                  class="help"
+                >
+                  {{ 50 - wizardData.description.length }} character remaining
+                </p>
+                <p v-else-if="wizardData.description.length < 50" class="help">
+                  {{ 50 - wizardData.description.length }} characters remaining
+                </p>
+              </V-Control>
+            </V-Field>
+            <V-Field>
+              <label>Related Industries</label>
+              <V-Control>
+                <Multiselect
+                  v-model="wizardData.relatedTo"
+                  label="value"
+                  placeholder="Enter something"
+                  :options="[
+                    {
+                      value: 'UI/UX Design',
+                    },
+                    {
+                      value: 'Web Development',
+                    },
+                    {
+                      value: 'Marketing',
+                    },
+                  ]"
+                ></Multiselect>
+              </V-Control>
+            </V-Field>
+          </div>
         </div>
       </div>
     </div>

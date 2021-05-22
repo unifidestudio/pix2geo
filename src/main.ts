@@ -66,7 +66,7 @@ app.use(VueApexCharts)
 app.use(VueCKEditor)
 app.use(VueTippy, {
   defaultProps: {
-    theme: 'light',
+    theme: 'dark',
   },
 })
 

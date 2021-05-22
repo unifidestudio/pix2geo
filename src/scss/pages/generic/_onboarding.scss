@@ -26,7 +26,7 @@ Onboarding Layouts
   padding: 20px 0;
 
   .title-wrap {
-    text-align: center;
+    text-align: left;
 
     h2 {
       font-family: $font-alt;
@@ -47,7 +47,7 @@ Onboarding Layouts
 
     .onboarding-wrap-inner {
       display: flex;
-      max-width: 880px;
+      // max-width: 880px;
       margin: 0 auto;
 
       .onboarding-card {
@@ -323,4 +323,8 @@ Onboarding Layouts
       }
     }
   }
+}
+
+.text-left {
+  text-align: left;
 }

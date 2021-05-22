@@ -43,9 +43,8 @@ const layoutsComponents = {
   'sidebar-float': SidebarFloatLayout,
 }
 
-export const sidebarLayoutId = ref<keyof typeof layoutsComponents>(
-  'sidebar-default'
-)
+export const sidebarLayoutId =
+  ref<keyof typeof layoutsComponents>('sidebar-default')
 export const sidebarLayout = computed(() => {
   return layoutsComponents[sidebarLayoutId.value] || SidebarLayout
 })

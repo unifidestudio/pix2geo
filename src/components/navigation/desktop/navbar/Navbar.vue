@@ -224,7 +224,12 @@ watch(
               <hr class="dropdown-divider" />
               <div class="dropdown-item is-button">
                 <button
-                  class="button v-button is-primary is-raised is-fullwidth logout-button"
+                  class="
+                    button
+                    v-button
+                    is-primary is-raised is-fullwidth
+                    logout-button
+                  "
                 >
                   <span class="icon is-small">
                     <i class="iconify" data-icon="feather:log-out"></i>
