@@ -12,6 +12,7 @@
  */
 
 import { useHead } from '@vueuse/head'
+import { computed } from 'vue'
 
 /**
  * activeSidebar is an exported ref() that we can use everywhere
@@ -21,6 +22,7 @@ import { activeSidebar, toggleSidebar } from '/@src/state/activeSidebarState'
 
 import { useStore } from 'vuex'
 const store = useStore()
+const userName = computed(() => store.getters.userName)
 
 useHead({
   title:
@@ -75,9 +77,7 @@ useHead({
             <div class="dashboard-header">
               <V-Avatar picture="/demo/avatars/8.jpg" size="large" />
               <div class="start">
-                <h3 class="dark-inverted">
-                  Welcome {{ store.getters.userName }}
-                </h3>
+                <h3 class="dark-inverted">Welcome {{ userName }}</h3>
                 <p>Neural Radiance Fields made simple.</p>
               </div>
               <div class="end">

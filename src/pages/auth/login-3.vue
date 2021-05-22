@@ -29,8 +29,9 @@ const handleLogin = async () => {
       .signInWithEmailAndPassword(email.value, password.value)
       .then((userCredential) => {
         const user = userCredential.user
+        store.dispatch('userName', user.displayName)
         notif.success('Welcome, ' + user.displayName)
-        router.push({ name: 'sidebar-dashboards' })
+        router.push({ path: '/' })
       })
       .catch((error) => {
         console.log(error.message)
