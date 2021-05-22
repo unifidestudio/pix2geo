@@ -61,28 +61,34 @@ useHead({
 
             <!-- Page title -->
             <div class="title-wrap">
-              <h1 class="title is-4 text-uppercase">
-                Neural Radiance Fields in the wild
-              </h1>
+              <h1 class="title is-4 text-uppercase">PIX2GEO NERF TOOLKIT</h1>
             </div>
 
             <Toolbar />
           </div>
 
           <div class="page-content-inner">
+            <div class="dashboard-header">
+              <V-Avatar picture="/demo/avatars/8.jpg" size="large" />
+              <div class="start">
+                <h3 class="dark-inverted">Welcome</h3>
+                <p>Neural Radiance Fields made simple.</p>
+              </div>
+              <div class="end">
+                <router-link to="wizard-v1">
+                  <V-Button dark="3">NEW PROJECT</V-Button>
+                </router-link>
+                <router-link to="sidebar/layouts/form-layouts-5">
+                  <V-Button color="primary" elevated>NEW SCENE</V-Button>
+                </router-link>
+              </div>
+            </div>
+
             <div class="standard-onboarding">
               <div class="title-wrap">
                 <h3 style="padding: 10px">
-                  We build on neural radiance fields (NeRF), which uses the
-                  weights of a multilayer perceptron to implicitly model the
-                  volumetric density and color of a scene. While NeRF works well
-                  on images of static subjects captured under controlled
-                  settings, it is incapable of modeling many ubiquitous,
-                  real-world phenomena in uncontrolled images, such as variable
-                  illumination or transient occluders. In this work, we
-                  introduce a series of extensions to NeRF to address these
-                  issues, thereby allowing for accurate reconstructions from
-                  unstructured image collections taken from the internet.
+                  Representing Scenes as Neural Radiance Fields for View
+                  Synthesis
                 </h3>
               </div>
 
@@ -90,12 +96,15 @@ useHead({
                 <div class="onboarding-wrap-inner">
                   <!--Card-->
                   <div class="onboarding-card">
+                    <div>
+                      <img src="/src/assets/ani/ani11.gif" alt="" />
+                    </div>
                     <h3>Project Manager</h3>
                     <p>
                       This is where you can manage your projects and scenes.
                     </p>
                     <div class="button-wrap">
-                      <router-link to="wizard-v1">
+                      <router-link to="/sidebar/layouts/projects-projects-3">
                         <V-Button color="primary" outlined rounded raised>
                           ENTER THE LAB
                         </V-Button>
@@ -104,6 +113,9 @@ useHead({
                   </div>
                   <!--Card-->
                   <div class="onboarding-card">
+                    <div>
+                      <img src="/src/assets/ani/ani10.gif" alt="" />
+                    </div>
                     <h3>Education | Guidelines</h3>
                     <p>
                       Guidelines and learning material and implementation tips.
@@ -116,6 +128,9 @@ useHead({
                   </div>
                   <!--Card-->
                   <div class="onboarding-card">
+                    <div>
+                      <img src="/src/assets/ani/ani12.gif" alt="" />
+                    </div>
                     <h3>Assets Library</h3>
                     <p>Manage and upload your image dataset library assets.</p>
                     <div class="button-wrap">
@@ -126,6 +141,9 @@ useHead({
                   </div>
                   <!--Card-->
                   <div class="onboarding-card">
+                    <div>
+                      <img src="/src/assets/ani/ani13.gif" alt="" />
+                    </div>
                     <h3>Analytics & Utilization</h3>
                     <p>Resource Utilization, Reports & Analytics</p>
                     <div class="button-wrap">
@@ -154,4 +172,34 @@ useHead({
 @import '../scss/abstracts/_variables.scss';
 @import '../scss/abstracts/_mixins.scss';
 @import '../scss/pages/generic/_onboarding.scss';
+
+.view-wrapper {
+}
+.dashboard-header {
+  display: flex;
+  align-items: center;
+  font-family: $font;
+  margin-bottom: 30px;
+
+  .start {
+    margin-left: 12px;
+
+    h3 {
+      font-family: $font-alt;
+      font-weight: 600;
+      font-size: 1.3rem;
+      color: $dark-text;
+    }
+  }
+
+  .end {
+    margin-left: auto;
+    display: flex;
+    justify-content: flex-end;
+
+    .button {
+      margin-left: 10px;
+    }
+  }
+}
 </style>
