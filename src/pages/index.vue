@@ -61,7 +61,9 @@ useHead({
 
             <!-- Page title -->
             <div class="title-wrap">
-              <h1 class="title is-4">Pix2Geo - Neural Radiance Fields.</h1>
+              <h1 class="title is-4 text-uppercase">
+                Neural Radiance Fields in the wild
+              </h1>
             </div>
 
             <Toolbar />
@@ -71,8 +73,8 @@ useHead({
             <div class="standard-onboarding">
               <div class="title-wrap">
                 <h2>
-                  Simplifying the complex art of creating mesh objects from
-                  Neural Radiance Fields
+                  Simplifying the complex science of creating mesh objects using
+                  Neural Radiance Fields and artificial intelligence.
                 </h2>
               </div>
 
@@ -95,9 +97,11 @@ useHead({
                       This is where you can manage your projects and scenes.
                     </p>
                     <div class="button-wrap">
-                      <V-Button color="primary" outlined rounded raised>
-                        ENTER THE LAB
-                      </V-Button>
+                      <router-link to="wizard-v1">
+                        <V-Button color="primary" outlined rounded raised>
+                          ENTER THE LAB
+                        </V-Button>
+                      </router-link>
                     </div>
                   </div>
                   <!--Card-->
@@ -154,11 +158,11 @@ useHead({
                       src="/@src/assets/illustrations/onboarding/set1-3-dark.svg"
                       alt=""
                     />
-                    <h3>Assets Library</h3>
-                    <p>Manage and upload your image dataset library assets.</p>
+                    <h3>Analytics & Utilization</h3>
+                    <p>Resource Utilization, Reports & Analytics</p>
                     <div class="button-wrap">
                       <V-Button color="primary" outlined rounded raised>
-                        CLOUD STORAGE
+                        RESOURCE UTILIZATION
                       </V-Button>
                     </div>
                   </div>

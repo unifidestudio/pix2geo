@@ -19,8 +19,11 @@ const validateStep = (relatedTo: WizardRelatedTo) => {
         <div class="column is-4">
           <div class="wizard-card">
             <img src="/@src/assets/illustrations/wizard/type-1.svg" alt="" />
-            <h3 class="dark-inverted">UI/UX Design</h3>
-            <p>Some short explanation about the type goes here.</p>
+            <h3 class="dark-inverted">Forward Facing Scene</h3>
+            <p>
+              Select this option if your photos are taking from the front of the
+              scene.
+            </p>
             <div class="button-wrap">
               <V-Button
                 color="primary"
@@ -41,8 +44,10 @@ const validateStep = (relatedTo: WizardRelatedTo) => {
         <div class="column is-4">
           <div class="wizard-card">
             <img src="/@src/assets/illustrations/wizard/type-2.svg" alt="" />
-            <h3 class="dark-inverted">Web Development</h3>
-            <p>Some short explanation about the type goes here.</p>
+            <h3 class="dark-inverted">Spherical 360 Scene</h3>
+            <p>
+              Select this option if your photos cover all angles of the scene.
+            </p>
             <div class="button-wrap">
               <V-Button
                 color="primary"
@@ -63,8 +68,8 @@ const validateStep = (relatedTo: WizardRelatedTo) => {
         <div class="column is-4">
           <div class="wizard-card">
             <img src="/@src/assets/illustrations/wizard/type-3.svg" alt="" />
-            <h3 class="dark-inverted">Marketing</h3>
-            <p>Some short explanation about the type goes here.</p>
+            <h3 class="dark-inverted">Additional Option</h3>
+            <p>Keeping this here incase theres another option here.</p>
             <div class="button-wrap">
               <V-Button
                 color="primary"

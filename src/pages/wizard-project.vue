@@ -54,7 +54,7 @@ watchEffect(() => {
 <template>
   <MinimalLayout>
     <!--Wizard Navbar-->
-    <WizardV1Navigation v-model:step="currentStep" :title="stepTitle" />
+    <ProjectWizardNavigation v-model:step="currentStep" :title="stepTitle" />
 
     <!--Wizard Progress Bar-->
     <progress
