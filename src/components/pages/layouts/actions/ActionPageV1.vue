@@ -6,6 +6,11 @@ import sleep from '/@src/utils/sleep'
 import useNotyf from '/@src/composable/useNotyf'
 import { popovers } from '/@src/data/users/userPopovers'
 
+import { computed } from 'vue'
+import { useStore } from 'vuex'
+const store = useStore()
+const userName = computed(() => store.getters.userName)
+
 const notyf = useNotyf()
 const router = useRouter()
 
@@ -44,10 +49,10 @@ const accept = async () => {
           <div class="sender-message is-dark-card-bordered is-dark-bg-4">
             <h4 class="dark-inverted">Message from Jason</h4>
             <p>
-              Hey Erik, It would be really cool if you could give us a hand on
-              this project. There are a lot of tasks popping out every day and I
-              feel the team is getting a bit overwhelmed. We'd love to have you
-              board.
+              Hey {{ userName.split(' ')[0] }}, It would be really cool if you
+              could give us a hand on this project. There are a lot of tasks
+              popping out every day and I feel the team is getting a bit
+              overwhelmed. We'd love to have you board.
             </p>
           </div>
           <div class="people-wrap">

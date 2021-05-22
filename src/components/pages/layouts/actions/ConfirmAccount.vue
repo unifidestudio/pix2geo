@@ -5,6 +5,11 @@ import { useRouter } from 'vue-router'
 import sleep from '/@src/utils/sleep'
 import useNotyf from '/@src/composable/useNotyf'
 
+import { computed } from 'vue'
+import { useStore } from 'vuex'
+const store = useStore()
+const userName = computed(() => store.getters.userName)
+
 const notyf = useNotyf()
 const router = useRouter()
 
@@ -12,7 +17,7 @@ const isLoading = ref(false)
 
 const confirm = async () => {
   isLoading.value = true
-  notyf.success('Your account is confirmed Erik !')
+  notyf.success('Your account is confirmed {{ userName.split(" ")[0] }} !')
 
   await sleep()
   router.push({
@@ -42,10 +47,10 @@ const confirm = async () => {
             />
             <h3 class="dark-inverted">Please confirm your account</h3>
             <p>
-              Hey Erik, It would be really cool if you could give us a hand on
-              this project. There are a lot of tasks popping out every day and I
-              feel the team is getting a bit overwhelmed. We'd love to have you
-              board.
+              Hey {{ userName.split(' ')[0] }}, It would be really cool if you
+              could give us a hand on this project. There are a lot of tasks
+              popping out every day and I feel the team is getting a bit
+              overwhelmed. We'd love to have you board.
             </p>
             <div class="buttons">
               <V-Button color="primary" raised @click="confirm">

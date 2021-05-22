@@ -2,6 +2,10 @@
 import { customersOptions } from '/@src/data/dashboards/personal-v1/customersChart'
 import { teamGaugeOptions } from '/@src/data/dashboards/personal-v1/teamGaugeChart'
 import { profitChartOptions } from '/@src/data/dashboards/personal-v1/profitChart'
+import { computed } from 'vue'
+import { useStore } from 'vuex'
+const store = useStore()
+const userName = computed(() => store.getters.userName)
 </script>
 
 <template>
@@ -11,7 +15,7 @@ import { profitChartOptions } from '/@src/data/dashboards/personal-v1/profitChar
     <div class="dashboard-header">
       <V-Avatar picture="/demo/avatars/8.jpg" size="large" />
       <div class="start">
-        <h3>Welcome back, Erik Kovalsky</h3>
+        <h3>Welcome back, {{ userName }}</h3>
         <p>We're very happy to see you again on your personal dashboard.</p>
       </div>
       <div class="end">
@@ -119,7 +123,7 @@ import { profitChartOptions } from '/@src/data/dashboards/personal-v1/profitChar
           <div class="dashboard-card is-upgrade">
             <i class="lnil lnil-crown-alt-1"></i>
             <div class="cta-content">
-              <h4>Hey Erik, you're doing great.</h4>
+              <h4>Hey {{ userName.split(' ')[0] }}, you're doing great.</h4>
               <p class="white-text">
                 Start using our team and project management tools
               </p>

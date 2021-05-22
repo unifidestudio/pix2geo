@@ -1,5 +1,9 @@
 <script setup lang="ts">
 import { todoList3, todoList4 } from '/@src/data/widgets/list/todoList'
+import { computed } from 'vue'
+import { useStore } from 'vuex'
+const store = useStore()
+const userName = computed(() => store.getters.userName)
 </script>
 
 <template>
@@ -18,7 +22,7 @@ import { todoList3, todoList4 } from '/@src/data/widgets/list/todoList'
                     picture="/demo/avatars/8.jpg"
                     squared
                   />
-                  <h3>Welcome back, Erik.</h3>
+                  <h3>Welcome back, {{ userName.split(' ')[0] }}.</h3>
                 </div>
               </div>
 

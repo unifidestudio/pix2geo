@@ -1,3 +1,10 @@
+<script setup lang="ts">
+import { computed } from 'vue'
+import { useStore } from 'vuex'
+const store = useStore()
+const userName = computed(() => store.getters.userName)
+</script>
+
 <template>
   <div class="profile-wrapper">
     <div class="profile-header has-text-centered">
@@ -7,7 +14,7 @@
         badge="/images/icons/flags/united-states-of-america.svg"
       />
 
-      <h3 class="title is-4 is-narrow is-thin">Erik Kovalsky</h3>
+      <h3 class="title is-4 is-narrow is-thin">{{ userName }}</h3>
       <p class="light-text">
         Hey everyone, Iam a product manager from New York and Iam looking for
         new opportunities in the software business.

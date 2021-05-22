@@ -1,6 +1,6 @@
 import { createStore } from 'vuex'
 const defaultState = {
-  userName: '',
+  userName: 'Anonymous',
 }
 // Create a new store instance.
 export default createStore({

@@ -10,6 +10,11 @@ import {
 } from '/@src/data/dashboards/personal-v2/users'
 import { popovers } from '/@src/data/users/userPopovers'
 
+import { computed } from 'vue'
+import { useStore } from 'vuex'
+const store = useStore()
+const userName = computed(() => store.getters.userName)
+
 const democheck = ref(['value_2'])
 </script>
 
@@ -25,7 +30,9 @@ const democheck = ref(['value_2'])
             size="xl"
           />
           <div class="user-meta is-dark-bordered-12">
-            <h3 class="title is-4 is-narrow is-bold">Welcome back, Erik K.</h3>
+            <h3 class="title is-4 is-narrow is-bold">
+              Welcome back, {{ userName.split(' ')[0] }}
+            </h3>
             <p class="light-text">It's really nice to see you again</p>
           </div>
           <div class="user-action">

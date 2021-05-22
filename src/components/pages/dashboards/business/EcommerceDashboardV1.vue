@@ -24,6 +24,10 @@ import {
   optionsSingle,
   flexRowsOrders,
 } from '/@src/data/dashboards/ecommerce/dashboardData'
+import { computed } from 'vue'
+import { useStore } from 'vuex'
+const store = useStore()
+const userName = computed(() => store.getters.userName)
 </script>
 
 <template>
@@ -32,7 +36,7 @@ import {
     <div class="dashboard-header">
       <V-Avatar picture="/demo/avatars/8.jpg" size="large" />
       <div class="start">
-        <h3 class="dark-inverted">Welcome back, Erik Kovalsky</h3>
+        <h3 class="dark-inverted">Welcome back, {{ userName }}</h3>
         <p>We're very happy to see you again on your dashboard.</p>
       </div>
       <div class="end">

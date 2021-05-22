@@ -60,7 +60,7 @@ onMounted(() => {
         />
       </div>
       <div class="start">
-        <h3 class="dark-inverted">Welcome back, Erik Kovalsky</h3>
+        <h3 class="dark-inverted">Welcome back, Erik Kovalskya</h3>
         <p>We're very happy to see you again on your dashboard.</p>
       </div>
       <div class="end">

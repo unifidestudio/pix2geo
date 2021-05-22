@@ -8,7 +8,7 @@ const store = useStore()
 const userName = computed(() => store.getters.userName)
 const handleLogout = async () => {
   firebase.auth().signOut()
-  store.dispatch('userName', '')
+  store.commit('userName', 'Anonymous')
 }
 
 const { dropdownElement, isOpen, toggle } = useDropdown()
