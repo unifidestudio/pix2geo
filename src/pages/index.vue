@@ -72,26 +72,24 @@ useHead({
           <div class="page-content-inner">
             <div class="standard-onboarding">
               <div class="title-wrap">
-                <h2>
-                  Simplifying the complex science of creating mesh objects using
-                  Neural Radiance Fields and artificial intelligence.
-                </h2>
+                <h3 style="padding: 10px">
+                  We build on neural radiance fields (NeRF), which uses the
+                  weights of a multilayer perceptron to implicitly model the
+                  volumetric density and color of a scene. While NeRF works well
+                  on images of static subjects captured under controlled
+                  settings, it is incapable of modeling many ubiquitous,
+                  real-world phenomena in uncontrolled images, such as variable
+                  illumination or transient occluders. In this work, we
+                  introduce a series of extensions to NeRF to address these
+                  issues, thereby allowing for accurate reconstructions from
+                  unstructured image collections taken from the internet.
+                </h3>
               </div>
 
               <div class="onboarding-wrap">
                 <div class="onboarding-wrap-inner">
                   <!--Card-->
                   <div class="onboarding-card">
-                    <img
-                      class="light-image"
-                      src="/@src/assets/illustrations/onboarding/set1-1.svg"
-                      alt=""
-                    />
-                    <img
-                      class="dark-image"
-                      src="/@src/assets/illustrations/onboarding/set1-1-dark.svg"
-                      alt=""
-                    />
                     <h3>Project Manager</h3>
                     <p>
                       This is where you can manage your projects and scenes.
@@ -106,16 +104,6 @@ useHead({
                   </div>
                   <!--Card-->
                   <div class="onboarding-card">
-                    <img
-                      class="light-image"
-                      src="/@src/assets/illustrations/onboarding/set1-2.svg"
-                      alt=""
-                    />
-                    <img
-                      class="dark-image"
-                      src="/@src/assets/illustrations/onboarding/set1-2-dark.svg"
-                      alt=""
-                    />
                     <h3>Education | Guidelines</h3>
                     <p>
                       Guidelines and learning material and implementation tips.
@@ -128,16 +116,6 @@ useHead({
                   </div>
                   <!--Card-->
                   <div class="onboarding-card">
-                    <img
-                      class="light-image"
-                      src="/@src/assets/illustrations/onboarding/set1-3.svg"
-                      alt=""
-                    />
-                    <img
-                      class="dark-image"
-                      src="/@src/assets/illustrations/onboarding/set1-3-dark.svg"
-                      alt=""
-                    />
                     <h3>Assets Library</h3>
                     <p>Manage and upload your image dataset library assets.</p>
                     <div class="button-wrap">
@@ -148,16 +126,6 @@ useHead({
                   </div>
                   <!--Card-->
                   <div class="onboarding-card">
-                    <img
-                      class="light-image"
-                      src="/@src/assets/illustrations/onboarding/set1-3.svg"
-                      alt=""
-                    />
-                    <img
-                      class="dark-image"
-                      src="/@src/assets/illustrations/onboarding/set1-3-dark.svg"
-                      alt=""
-                    />
                     <h3>Analytics & Utilization</h3>
                     <p>Resource Utilization, Reports & Analytics</p>
                     <div class="button-wrap">
