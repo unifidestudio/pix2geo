@@ -19,12 +19,8 @@
             src="/@src/assets/illustrations/onboarding/set1-1-dark.svg"
             alt=""
           />
-          <h3>Configure Shop</h3>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Recte
-            dicis; Ita enim vivunt quidam, ut eorum vita refellatur oratio. Sed
-            tament.
-          </p>
+          <h3>Projects</h3>
+          <p>This is where you can manage your projects and scenes.</p>
           <div class="button-wrap">
             <V-Button color="primary" outlined rounded raised>
               Configure Shop
@@ -43,11 +39,11 @@
             src="/@src/assets/illustrations/onboarding/set1-2-dark.svg"
             alt=""
           />
-          <h3>Manage Products</h3>
+          <h3>Learn</h3>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Recte
-            dicis; Ita enim vivunt quidam, ut eorum vita refellatur oratio. Sed
-            tament.
+            Guidelines and learning material to understand some of the deeper
+            concepts behind neural networking, artificial intelligence, and
+            machine learning algorithms.
           </p>
           <div class="button-wrap">
             <V-Button color="primary" outlined rounded raised>
@@ -67,12 +63,8 @@
             src="/@src/assets/illustrations/onboarding/set1-3-dark.svg"
             alt=""
           />
-          <h3>Setup Payments</h3>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Recte
-            dicis; Ita enim vivunt quidam, ut eorum vita refellatur oratio. Sed
-            tament.
-          </p>
+          <h3>Image Datasets</h3>
+          <p>Manage and upload your image dataset library assets.</p>
           <div class="button-wrap">
             <V-Button color="primary" outlined rounded raised>
               Setup Payments

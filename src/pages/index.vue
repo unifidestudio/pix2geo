@@ -18,7 +18,6 @@ import { useHead } from '@vueuse/head'
  * @see /src/components/navigation/desktop/sidebar/subsidebars/GenericSidebar.vue
  */
 import { activeSidebar, toggleSidebar } from '/@src/state/activeSidebarState'
-
 useHead({
   title:
     'Pixels to Geometry using Artifical Intelligence Neural Radiance Fields',
@@ -62,17 +61,110 @@ useHead({
 
             <!-- Page title -->
             <div class="title-wrap">
-              <h1 class="title is-4">
-                Pix2Geo - Neural Radiance Fields in the wild using Pytorch
-                Lighting
-              </h1>
+              <h1 class="title is-4">Pix2Geo - Neural Radiance Fields.</h1>
             </div>
 
             <Toolbar />
           </div>
 
           <div class="page-content-inner">
-            <LifestyleDashboardV1 />
+            <div class="standard-onboarding">
+              <div class="title-wrap">
+                <h2>
+                  Simplifying the complex art of creating mesh objects from
+                  Neural Radiance Fields
+                </h2>
+              </div>
+
+              <div class="onboarding-wrap">
+                <div class="onboarding-wrap-inner">
+                  <!--Card-->
+                  <div class="onboarding-card">
+                    <img
+                      class="light-image"
+                      src="/@src/assets/illustrations/onboarding/set1-1.svg"
+                      alt=""
+                    />
+                    <img
+                      class="dark-image"
+                      src="/@src/assets/illustrations/onboarding/set1-1-dark.svg"
+                      alt=""
+                    />
+                    <h3>Project Manager</h3>
+                    <p>
+                      This is where you can manage your projects and scenes.
+                    </p>
+                    <div class="button-wrap">
+                      <V-Button color="primary" outlined rounded raised>
+                        ENTER THE LAB
+                      </V-Button>
+                    </div>
+                  </div>
+                  <!--Card-->
+                  <div class="onboarding-card">
+                    <img
+                      class="light-image"
+                      src="/@src/assets/illustrations/onboarding/set1-2.svg"
+                      alt=""
+                    />
+                    <img
+                      class="dark-image"
+                      src="/@src/assets/illustrations/onboarding/set1-2-dark.svg"
+                      alt=""
+                    />
+                    <h3>Education | Guidelines</h3>
+                    <p>
+                      Guidelines and learning material and implementation tips.
+                    </p>
+                    <div class="button-wrap">
+                      <V-Button color="primary" outlined rounded raised>
+                        LEARN
+                      </V-Button>
+                    </div>
+                  </div>
+                  <!--Card-->
+                  <div class="onboarding-card">
+                    <img
+                      class="light-image"
+                      src="/@src/assets/illustrations/onboarding/set1-3.svg"
+                      alt=""
+                    />
+                    <img
+                      class="dark-image"
+                      src="/@src/assets/illustrations/onboarding/set1-3-dark.svg"
+                      alt=""
+                    />
+                    <h3>Assets Library</h3>
+                    <p>Manage and upload your image dataset library assets.</p>
+                    <div class="button-wrap">
+                      <V-Button color="primary" outlined rounded raised>
+                        CLOUD STORAGE
+                      </V-Button>
+                    </div>
+                  </div>
+                  <!--Card-->
+                  <div class="onboarding-card">
+                    <img
+                      class="light-image"
+                      src="/@src/assets/illustrations/onboarding/set1-3.svg"
+                      alt=""
+                    />
+                    <img
+                      class="dark-image"
+                      src="/@src/assets/illustrations/onboarding/set1-3-dark.svg"
+                      alt=""
+                    />
+                    <h3>Assets Library</h3>
+                    <p>Manage and upload your image dataset library assets.</p>
+                    <div class="button-wrap">
+                      <V-Button color="primary" outlined rounded raised>
+                        CLOUD STORAGE
+                      </V-Button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
             <!--
                 Page content goes here
 
@@ -85,3 +177,9 @@ useHead({
     </div>
   </SidebarLayout>
 </template>
+
+<style lang="scss">
+@import '../scss/abstracts/_variables.scss';
+@import '../scss/abstracts/_mixins.scss';
+@import '../scss/pages/generic/_onboarding.scss';
+</style>
