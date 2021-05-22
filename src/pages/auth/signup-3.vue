@@ -32,6 +32,7 @@ const handleSignup = async () => {
             displayName: name.value,
           })
           .then(() => {
+            notif.success('Welcome, ' + email.value)
             this.$router.push('/auth/login-3')
           })
       })
@@ -39,7 +40,6 @@ const handleSignup = async () => {
         alert(error.message)
       })
 
-    notif.success('Welcome, Erik Kovalsky')
     router.push({ name: 'sidebar-dashboards' })
     isLoading.value = false
   }

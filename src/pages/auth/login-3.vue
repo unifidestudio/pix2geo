@@ -24,13 +24,12 @@ const handleLogin = async () => {
       .auth()
       .signInWithEmailAndPassword(email.value, password.value)
       .then(() => {
+        notif.success('Welcome, ' + email.value)
         router.push({ name: 'sidebar-dashboards' })
       })
       .catch((error) => {
         console.log(error.message)
       })
-
-    notif.success('Welcome, Erik Kovalsky')
     isLoading.value = false
   }
 
