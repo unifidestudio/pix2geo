@@ -8,13 +8,17 @@ import useNotyf from '/@src/composable/useNotyf'
 import sleep from '/@src/utils/sleep'
 
 import firebase from 'firebase'
+import { useStore } from 'vuex'
+const store = useStore()
 
 const isLoading = ref(false)
 const router = useRouter()
 const notif = useNotyf()
 
-let email = ref('')
-let password = ref('')
+const email = ref('')
+const password = ref('')
+
+const setUser = () => store.dispatch('user', {})
 
 const handleLogin = async () => {
   if (!isLoading.value) {
@@ -23,8 +27,9 @@ const handleLogin = async () => {
     firebase
       .auth()
       .signInWithEmailAndPassword(email.value, password.value)
-      .then(() => {
-        notif.success('Welcome, ' + email.value)
+      .then((userCredential) => {
+        const user = userCredential.user
+        notif.success('Welcome, ' + user.displayName)
         router.push({ name: 'sidebar-dashboards' })
       })
       .catch((error) => {

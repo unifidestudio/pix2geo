@@ -1,6 +1,6 @@
 import { createStore } from 'vuex'
 const defaultState = {
-  name: 'Loggedin User',
+  userName: 'Thomas',
 }
 // Create a new store instance.
 export default createStore({
@@ -8,18 +8,18 @@ export default createStore({
     return defaultState
   },
   mutations: {
-    name(state: typeof defaultState, p: string) {
-      state.name = p
+    userName(state: typeof defaultState, p: string) {
+      state.userName = p
     },
   },
   actions: {
-    name(context) {
-      context.commit('name', 'Loggedin User')
+    userName(context, p: string) {
+      context.commit('userName', p)
     },
   },
   getters: {
-    name(state: typeof defaultState) {
-      return state.name
+    userName(state: typeof defaultState) {
+      return state.userName
     },
   },
 })

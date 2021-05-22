@@ -13,10 +13,10 @@ const router = useRouter()
 const notif = useNotyf()
 const isLoading = ref(false)
 
-let name = ref('')
-let email = ref('')
-let password = ref('')
-let password2 = ref('')
+const name = ref('')
+const email = ref('')
+const password = ref('')
+const password2 = ref('')
 
 const handleSignup = async () => {
   if (!isLoading.value) {
@@ -26,21 +26,31 @@ const handleSignup = async () => {
       .auth()
       .createUserWithEmailAndPassword(email.value, password.value)
       .then((res) => {
-        console.log(res.user)
         res.user
-          .updateProfile({
-            displayName: name.value,
-          })
+          .sendEmailVerification()
           .then(() => {
-            notif.success('Welcome, ' + email.value)
-            this.$router.push('/auth/login-3')
+            console.log('verification sent')
+            res.user
+              .updateProfile({
+                displayName: name.value,
+              })
+              .then(() => {
+                notif.success(
+                  'Welcome, ' +
+                    name.value +
+                    '. Please check your mail to verify your account.'
+                )
+                router.push('/auth/login-3')
+              })
+          })
+          .catch((error) => {
+            console.log('error - verification not sent')
           })
       })
       .catch((error) => {
         alert(error.message)
       })
 
-    router.push({ name: 'sidebar-dashboards' })
     isLoading.value = false
   }
 
