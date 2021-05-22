@@ -7,17 +7,36 @@ import { isDark } from '/@src/state/darkModeState'
 import useNotyf from '/@src/composable/useNotyf'
 import sleep from '/@src/utils/sleep'
 
+import firebase from 'firebase'
+
 const isLoading = ref(false)
 const router = useRouter()
 const notif = useNotyf()
 
+let email = ref('')
+let password = ref('')
+
 const handleLogin = async () => {
   if (!isLoading.value) {
     isLoading.value = true
-    await sleep(2000)
-    notif.success('Welcome back, Erik Kovalsky')
-    router.push({ name: 'sidebar-dashboards' })
+
+    firebase
+      .auth()
+      .signInWithEmailAndPassword(email.value, password.value)
+      .then(() => {
+        router.push({ name: 'sidebar-dashboards' })
+      })
+      .catch((error) => {
+        console.log(error.message)
+      })
+
+    notif.success('Welcome, Erik Kovalsky')
     isLoading.value = false
+  }
+
+  return {
+    email,
+    password,
   }
 }
 
@@ -71,16 +90,18 @@ useHead({
               <V-Field>
                 <V-Control icon="feather:user">
                   <input
+                    v-model="email"
                     class="input"
                     type="text"
-                    placeholder="Username"
-                    autocomplete="username"
+                    placeholder="Email Address"
+                    autocomplete="email"
                   />
                 </V-Control>
               </V-Field>
               <V-Field>
                 <V-Control icon="feather:lock">
                   <input
+                    v-model="password"
                     class="input"
                     type="password"
                     placeholder="Password"

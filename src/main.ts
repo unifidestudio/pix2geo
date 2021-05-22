@@ -52,6 +52,7 @@ import './scss/vendors/prism-coldark-cold.css'
 import './scss/main.scss'
 
 import firebase from 'firebase/app'
+import store from './store/store'
 
 // Now we can start our vue app
 const app = createApp(App)
@@ -76,6 +77,8 @@ app.directive('has-nested-router-link', hasNestedRouterLink)
 app.directive('background', background)
 app.directive('tooltip', tooltip)
 
+app.use(store)
+
 const firebaseConfig = {
   apiKey: 'AIzaSyA48f-h4gt8u3PXN25YEoGZBsp_CZgr6Eo',
   authDomain: 'pix2geo.firebaseapp.com',
@@ -89,6 +92,6 @@ const firebaseConfig = {
 
 firebase.initializeApp(firebaseConfig)
 
-console.log(firebase.apps.length > 0) // test as per https://stackoverflow.com/questions/37652328/how-to-check-if-a-firebase-app-is-already-initialized-on-android#41005100
+console.log('firebase init: ' + (firebase.apps.length > 0)) // test as per https://stackoverflow.com/questions/37652328/how-to-check-if-a-firebase-app-is-already-initialized-on-android#41005100
 
 app.mount('#app')
