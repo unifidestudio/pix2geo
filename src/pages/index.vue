@@ -18,6 +18,10 @@ import { useHead } from '@vueuse/head'
  * @see /src/components/navigation/desktop/sidebar/subsidebars/GenericSidebar.vue
  */
 import { activeSidebar, toggleSidebar } from '/@src/state/activeSidebarState'
+
+import { useStore } from 'vuex'
+const store = useStore()
+
 useHead({
   title:
     'Pixels to Geometry using Artifical Intelligence Neural Radiance Fields',
@@ -71,7 +75,9 @@ useHead({
             <div class="dashboard-header">
               <V-Avatar picture="/demo/avatars/8.jpg" size="large" />
               <div class="start">
-                <h3 class="dark-inverted">Welcome</h3>
+                <h3 class="dark-inverted">
+                  Welcome {{ store.getters.userName }}
+                </h3>
                 <p>Neural Radiance Fields made simple.</p>
               </div>
               <div class="end">
