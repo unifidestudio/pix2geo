@@ -92,6 +92,6 @@ const firebaseConfig = {
 
 firebase.initializeApp(firebaseConfig)
 
-console.log('firebase init: ' + (firebase.apps.length > 0)) // test as per https://stackoverflow.com/questions/37652328/how-to-check-if-a-firebase-app-is-already-initialized-on-android#41005100
+// console.log('firebase init: ' + (firebase.apps.length > 0)) // test
 
 app.mount('#app')

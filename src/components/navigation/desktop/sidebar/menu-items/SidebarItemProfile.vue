@@ -1,5 +1,16 @@
 <script setup lang="ts">
 import useDropdown from '/@src/composable/useDropdown'
+import { computed } from 'vue'
+import { useStore } from 'vuex'
+import firebase from 'firebase'
+
+const store = useStore()
+const userName = computed(() => store.getters.userName)
+const handleLogout = async () => {
+  firebase.auth().signOut()
+  store.dispatch('userName', '')
+}
+
 const { dropdownElement, isOpen, toggle } = useDropdown()
 </script>
 
@@ -33,8 +44,8 @@ const { dropdownElement, isOpen, toggle } = useDropdown()
               />
             </div>
             <div class="meta">
-              <span>Erik Kovalsky</span>
-              <span>Product Manager</span>
+              <span>{{ userName }}</span>
+              <span>Pix2Geo User</span>
             </div>
           </div>
           <RouterLink
@@ -79,14 +90,9 @@ const { dropdownElement, isOpen, toggle } = useDropdown()
             </div>
           </a>
           <hr class="dropdown-divider" />
-          <div class="dropdown-item is-button">
+          <div class="dropdown-item is-button" @click="handleLogout">
             <button
-              class="
-                button
-                v-button
-                is-primary is-raised is-fullwidth
-                logout-button
-              "
+              class="button v-button is-primary is-raised is-fullwidth logout-button"
             >
               <span class="icon is-small">
                 <i class="iconify" data-icon="feather:log-out"></i>
